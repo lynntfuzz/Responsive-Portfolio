@@ -1,13 +1,14 @@
 /**
- * Portfolio CSS
+ * Responsive Portfolio CSS
  **/
 
-* {
-    box-sizing: border-box;
-    margin:auto;
-    background-color: white;
-} 
+ * { margin: auto; padding: 0;}
   
+ html {
+    height: 100%;
+    width: 100%;
+  }
+
 header {
     width:100%; 
     background-color: white;
@@ -15,13 +16,13 @@ header {
 
 body {
     font-size: 24px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-image: url("../images/gravel.png");
     background-position: center;
     background-repeat:repeat;
     background-size: cover;
-    height:100%;
-    width:100%;
+    /* height:100%;
+    width:100%; */
 }
   
 .topbanner {
@@ -42,19 +43,36 @@ body {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
 }
 
-/* Style the links inside the navigation bar */
-.topbanner a {
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
     float: right;
+    list-style-type: none;
+    overflow: auto;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
     color: #777777;
-    background: #ffffff;
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    transition: 0.3s;
     font-size: 17px;
 }
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color:#4aaaa5;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
 
 /* Main content panel*/
 .main_content {
@@ -65,7 +83,17 @@ body {
     background:#ffffff;
     padding: 20px;
 }
-  
+ 
+.main_content_about_me {
+    clear: both;
+    margin-top: 20px;
+    width:960px;
+    font-size: 24px;
+    background:#ffffff;
+    padding: 20px;
+}
+
+
 .header_label {
     color:teal;
     margin:0px 0px 10px 0px;
@@ -74,7 +102,7 @@ body {
     border-bottom:s solid 2px #777777;
 }
 
-#photo {
+#about_me_photo {
     float:left;
     height: 140;
     width:140;
@@ -118,15 +146,22 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px;
+    /* border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 20px; */
+    width:100%;
+    height:100%;
+    
 }
 
 /*
 Footer with copywrite.
  */
  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
     border-top: solid 5px teal;
     margin-top: 45px;
     background:#666666;
@@ -134,3 +169,89 @@ Footer with copywrite.
     text-align: center;
     font-size: 14px;
 } 
+
+/* Mobile Screen Size Begin */
+
+@media handheld, screen and (max-width: 599px) {
+
+
+  
+    .main_content_about_me {
+      width: 100%;
+      background: blue;
+      padding-top: 10px;
+      padding-right: 15px;
+    }
+   
+
+  }
+   
+  
+  
+  /* Tablet Screen Size Begin */
+  
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    
+    .main_content_about_me {
+      width: 70%;
+      height: 100%;
+      position: relative;
+      top: 5em;
+      min-width: 600px;
+    }
+  
+  }
+  
+  /* Tablet Screen Size End */
+  
+  /* Desktop Screen Size Begin */
+  
+  @media only screen and (min-width: 960px) {
+  
+    .main_content_about_me {
+        background: pink;
+      /* width: 960px; */
+      /* position: : */
+      /* top: 5em; */
+      /* padding: 21px; */
+      /* min-width: 900px; */
+    }   
+  
+  }
+  
+  /* Desktop Screen Size End */
+  
+  /* @media handheld, screen and (max-width: 1280px) {
+  
+    .main_content_about_me {
+        width: 70%;
+        background: green;
+        height: 100%;
+        position: relative;
+        top: 5em;
+        min-width: 600px;
+      }
+  
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+    }
+  
+    ul.topnav.responsive {position: relative;}
+  
+    ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    ul.topnav.responsive li {
+      float: none;
+      display: inline;
+    }
+    ul.topnav.responsive li a {
+      display: block;
+      text-align: left;
+    }
+  
+  }  */
