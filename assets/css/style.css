@@ -75,6 +75,8 @@ ul.topnav li a {
     font-size: 17px;
 }
 
+.selected { background-color:#4aaaa5}
+
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color:#4aaaa5;}
 
@@ -247,7 +249,7 @@ Footer with copywrite.
   @media only screen and (min-width: 601px) and (max-width: 899px) {
     
     [class*="col-"] {
-        width: 49%%;
+        width: 100%;
     } 
 
     .main_content_about_me {
