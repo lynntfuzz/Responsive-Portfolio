@@ -1,0 +1,25 @@
+
+
+  .grid_wrapper {
+    display:grid;
+    grid-template-columns: 250px 250px;
+    column-gap: 30px;
+  }
+
+  .image_wrapper {
+    width:250px;
+    height: 200px;
+  }
+
+ .project_label {
+    position: relative;
+    margin: 0;
+    width:250px;
+    background: #4aaaa5;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    top: -55px;
+  }

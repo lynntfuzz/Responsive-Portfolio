@@ -1,0 +1,136 @@
+/**
+ * Portfolio CSS
+ **/
+
+* {
+    box-sizing: border-box;
+    margin:auto;
+    background-color: white;
+} 
+  
+header {
+    width:100%; 
+    background-color: white;
+}
+
+body {
+    font-size: 24px;
+    margin: 0 auto;
+    background-image: url("../images/gravel.png");
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+}
+  
+.topbanner {
+    overflow: auto;
+    background: #ffffff;
+    border-bottom: solid 2px #cccccc;
+    width: 960px;
+    margin-bottom: 20px;
+}
+
+.main_title_label {
+    margin: 0;
+    float: left;
+    background: #4aaaa5;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+/* Style the links inside the navigation bar */
+.topbanner a {
+    float: right;
+    color: #777777;
+    background: #ffffff;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Main content panel*/
+.main_content {
+    clear: both;
+    margin-top: 20px;
+    width:960px;
+    font-size: 24px;
+    background:#ffffff;
+    padding: 20px;
+}
+  
+.header_label {
+    color:teal;
+    margin:0px 0px 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom:s solid 2px #777777;
+}
+
+#photo {
+    float:left;
+    height: 140;
+    width:140;
+    margin-right: 10px;
+}
+
+.about_me_summary {
+    color:#777777;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*
+Footer with copywrite.
+ */
+ footer {
+    border-top: solid 5px teal;
+    margin-top: 45px;
+    background:#666666;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+} 
