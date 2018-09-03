@@ -2,17 +2,11 @@
  * Responsive Portfolio CSS
  **/
 
- * { margin: auto; padding: 0; box-sizing: border-box;}
+ /**
+    Style default is for Large Desktop
+ */
 
- .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
+ * { margin: auto; padding: 0; box-sizing: border-box;}
   
  html {
     height: 100%;
@@ -26,13 +20,10 @@ header {
 
 body {
     font-size: 24px;
-    /* margin: 0 auto; */
     background-image: url("../images/gravel.png");
     background-position: center;
     background-repeat:repeat;
     background-size: cover;
-    /* height:100%;
-    width:100%; */
 }
   
 .topbanner {
@@ -44,7 +35,7 @@ body {
 }
 
 .main_title_label {
-    margin: 0;
+    margin-left:30px;;
     float: left;
     background: #4aaaa5;
     color: white;
@@ -84,35 +75,28 @@ ul.topnav li a:hover {background-color:#4aaaa5;}
 ul.topnav li.icon {display: none;}
 
 
-.main_content_about_me {
+.main_content {
     clear: both;
     margin-top: 20px;
     width:960px;
     font-size: 24px;
     background:#ffffff;
     padding: 20px;
+    background:green;
 }
 
-.main_content_portfolio {
+.row::after {
+    content: "";
     clear: both;
-    margin-top: 20px;
-    width:960px;
-    font-size: 24px;
-    background:#ffffff;
-    padding: 20px;
+    display: table;
 }
 
-.main_content_contact {
-    clear: both;
-    margin-top: 20px;
-    width:960px;
-    font-size: 24px;
-    background:#ffffff;
-    padding: 20px;
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
 
-
-/* Main content panel*/
+/* Main content panel, holds everything (header and footer too)*/
 .outer_container {
     clear: both;
     margin-top: 20px;
@@ -120,14 +104,13 @@ ul.topnav li.icon {display: none;}
     font-size: 24px;
     background:#ffffff;
     padding: 20px;
+    background: green;
 }
   
- 
-
 
 .header_label {
     color:teal;
-    margin:0px 0px 10px 0px;
+    margin:0px 0px 0px 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom:s solid 2px #777777;
@@ -191,12 +174,8 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-    /* border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px; */
     width:100%;
     height:100%;
-    
 }
 
 /*
@@ -216,10 +195,8 @@ Footer with copywrite.
 } 
 
 /* Mobile Screen Size Begin */
-/* For mobile phones: */
-
-
-@media handheld, screen and (max-width: 600px) {
+/* For xs mobile phones: */
+@media handheld, screen and (max-width: 640px) {
 
     [class*="col-"] {
         width: 100%;
@@ -254,22 +231,10 @@ Footer with copywrite.
         text-align: left;
     }
 
-    .outer_container {
-        width: 100%;
-    }
-
-    .main_content_about_me {
+    .main_content {
         width: 100%;
         padding-top: 10px;
-    }
-   
-    .main_content_contact {
-        width: 100%;
-        padding-top: 10px;
-    }
-    .main_content_portfolio {
-        width: 100%;
-        padding-top: 10px;
+        background: blue;
     }
 
     .project_image {
@@ -281,53 +246,35 @@ Footer with copywrite.
         width:100%
     }
   }
-   
+ /* End of Mobile Phone Size Rules */ 
   
   
-  /* Tablet Screen Size Begin */
-  
-  @media only screen and (min-width: 601px) and (max-width: 899px) {
+  /* Medium Size: Medium sized mobile phones/screens Screen Size Begin */
+  @media handheld, screen and (min-width: 641px) and (max-width: 768px) {
     
     [class*="col-"] {
         width: 100%;
     } 
 
-    /* ul.topnav li {display: none;}
-
-    ul.topnav li.icon {
-      float: right;
-      display: inline-block;
-    } */
-
-    .main_content_about_me {
+    .main_content {
         width: 100%;
         padding-top: 10px;
-    }
-   
-    .outer_container {
-        width: 100%;
+        background: yellow;
     }
 
-    .main_content_contact {
-        width: 100%;
-        padding-top: 10px;
-    }
-    .main_content_portfolio {
-        width: 100%;
-        padding-top: 10px;
-    }
     .project_image {
         width: 100%;
         height: auto;     
     }
+
     .project_label{
         width:100%
     }
   }
-  /* Tablet Screen Size End */
+  /* Medium Screen Size End */
   
-  /* Desktop Screen Size Begin */ 
-@media (min-width: 900px) { 
+  /* Tablet size */ 
+@media screen and (min-width: 769px) and (max-width: 980px) { 
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -342,19 +289,10 @@ Footer with copywrite.
     .col-12 {width: 100%;}
     
   
-    .main_content_about_me {
-        width: 100%;
+    .main_content {
+        width: 90%;
         padding-top: 10px;
-    }
-   
-    .main_content_portfolio {
-        width: 100%;
-        padding-top: 10px;
-    }   
-
-    .main_content_contact {
-        width: 100%;
-        padding: 10px;
+        background:pink;
     }
 
     .project_image {
