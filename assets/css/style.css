@@ -39,7 +39,7 @@ body {
     overflow: auto;
     background: #ffffff;
     border-bottom: solid 2px #cccccc;
-    width: 960px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -102,8 +102,10 @@ ul.topnav li.icon {display: none;}
     padding: 20px;
 }
 
+
+
 /* Main content panel*/
-.main_content_contact {
+.outer_container {
     clear: both;
     margin-top: 20px;
     width:960px;
@@ -214,7 +216,40 @@ Footer with copywrite.
     [class*="col-"] {
         width: 100%;
     } 
-  
+
+    /* Float the list items side by side */
+    ul.topnav li {float: left;}
+
+    ul.topnav li {display: none;}
+
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+    }
+    
+    ul.topnav.responsive {position: relative;  margin-top: 45px;}
+
+    ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+    }
+   
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    .outer_container {
+        width: 100%;
+    }
+
     .main_content_about_me {
         width: 100%;
         background: blue;
@@ -252,12 +287,23 @@ Footer with copywrite.
         width: 100%;
     } 
 
+    /* ul.topnav li {display: none;}
+
+    ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+    } */
+
     .main_content_about_me {
         width: 100%;
         background: yellow;
         padding-top: 10px;
     }
    
+    .outer_container {
+        width: 100%;
+    }
+
     .main_content_contact {
         width: 100%;
         background: yellow;
@@ -292,8 +338,8 @@ Footer with copywrite.
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    
   
-
     .main_content_about_me {
         width: 100%;
         background: pink;
@@ -310,6 +356,7 @@ Footer with copywrite.
         background: pink;
         padding-top: 10px;
     }   
+
     .project_image {
         width: 100%;
         height: auto;     
