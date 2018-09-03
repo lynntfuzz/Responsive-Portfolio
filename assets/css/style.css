@@ -82,7 +82,7 @@ ul.topnav li.icon {display: none;}
     font-size: 24px;
     background:#ffffff;
     padding: 20px;
-    background:green;
+    /* background:green; */
 }
 
 .row::after {
@@ -104,7 +104,7 @@ ul.topnav li.icon {display: none;}
     font-size: 24px;
     background:#ffffff;
     padding: 20px;
-    background: green;
+    /* background: green; */
 }
   
 
@@ -141,9 +141,6 @@ ul.topnav li.icon {display: none;}
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     top: -55px;
   }
-
-
-
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -234,7 +231,7 @@ Footer with copywrite.
     .main_content {
         width: 100%;
         padding-top: 10px;
-        background: blue;
+        /* background: blue; */
     }
 
     .project_image {
@@ -259,7 +256,7 @@ Footer with copywrite.
     .main_content {
         width: 100%;
         padding-top: 10px;
-        background: yellow;
+        /* background: yellow; */
     }
 
     .project_image {
@@ -292,7 +289,7 @@ Footer with copywrite.
     .main_content {
         width: 90%;
         padding-top: 10px;
-        background:pink;
+        /* background:pink; */
     }
 
     .project_image {
