@@ -102,6 +102,14 @@ ul.topnav li.icon {display: none;}
     padding: 20px;
 }
 
+.main_content_contact {
+    clear: both;
+    margin-top: 20px;
+    width:960px;
+    font-size: 24px;
+    background:#ffffff;
+    padding: 20px;
+}
 
 
 /* Main content panel*/
@@ -252,18 +260,15 @@ Footer with copywrite.
 
     .main_content_about_me {
         width: 100%;
-        background: blue;
         padding-top: 10px;
     }
    
     .main_content_contact {
         width: 100%;
-        background: blue;
         padding-top: 10px;
     }
     .main_content_portfolio {
         width: 100%;
-        background: blue;
         padding-top: 10px;
     }
 
@@ -296,7 +301,6 @@ Footer with copywrite.
 
     .main_content_about_me {
         width: 100%;
-        background: yellow;
         padding-top: 10px;
     }
    
@@ -306,12 +310,10 @@ Footer with copywrite.
 
     .main_content_contact {
         width: 100%;
-        background: yellow;
         padding-top: 10px;
     }
     .main_content_portfolio {
         width: 100%;
-        background: yellow;
         padding-top: 10px;
     }
     .project_image {
@@ -342,20 +344,18 @@ Footer with copywrite.
   
     .main_content_about_me {
         width: 100%;
-        background: pink;
         padding-top: 10px;
     }
    
-    .main_content_contact {
-        width: 100%;
-        background: pink;
-        padding-top: 10px;
-    }
     .main_content_portfolio {
         width: 100%;
-        background: pink;
         padding-top: 10px;
     }   
+
+    .main_content_contact {
+        width: 100%;
+        padding: 10px;
+    }
 
     .project_image {
         width: 100%;
